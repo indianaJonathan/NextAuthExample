@@ -18,7 +18,7 @@ export function LoginButton({ provider }: LoginButtonProps) {
             type="button"
             className="px-3 py-2 flex flex-row items-center justify-between gap-4 rounded-sm bg-zinc-500 w-full"
         >
-            {getIcon(provider.name)}
+            {getIcon(provider.label)}
             <span className="text-black font-semibold text-left flex-1">
                 Entrar com uma conta { capitalize(`${provider.label}`) }
             </span>
