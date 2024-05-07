@@ -21,3 +21,12 @@ Você pode encontrar a versão publicada desse projeto [clicando aqui](https://n
 - LinkedIn;
 - Twitter (X)
 
+### Imagens
+***Página pública***
+![image](https://github.com/indianaJonathan/NextAuthExample/assets/22666576/0fc4c494-ecde-4a9a-9b9a-68b1549526e7)
+
+***Página de autenticação***
+![image](https://github.com/indianaJonathan/NextAuthExample/assets/22666576/798bbb66-1057-4cad-b09e-ee4b8fe08cb0)
+
+***Página privada***
+![image](https://github.com/indianaJonathan/NextAuthExample/assets/22666576/5188f9da-3824-4c7e-a792-2f448f42b8f6)
