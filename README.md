@@ -13,13 +13,13 @@ Você pode encontrar a versão publicada desse projeto [clicando aqui](https://n
 ## Providers implementados
 - GitHub;
 - Google;
-- Microsoft (Entra ID)
+- Microsoft (Entra ID);
+- Twitter (X)
 
 ## Providers ainda não implementados
 - Apple;
 - Instagram;
 - LinkedIn;
-- Twitter (X)
 
 ### Imagens
 ***Página pública***

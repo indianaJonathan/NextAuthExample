@@ -2,26 +2,29 @@ import NextAuth from "next-auth";
 import GoogleProvider from "next-auth/providers/google";
 import EntraProvider from "next-auth/providers/microsoft-entra-id";
 import GithubProvider from "next-auth/providers/github";
+import LinkedinProvider from "next-auth/providers/linkedin";
+import TwitterProvider from "next-auth/providers/twitter";
 
 export const {
     handlers: { GET, POST },
     auth,
+    signIn,
+    signOut,
 } = NextAuth({
     session: { strategy: 'jwt' },
 
     providers: [
-        GoogleProvider({
-            clientId: process.env.GOOGLE_ID,
-            clientSecret: process.env.GOOGLE_SECRET,
-        }),
+        GoogleProvider,
         EntraProvider({
-            clientId: process.env.MICROSOFT_ENTRA_ID,
-            clientSecret: process.env.MICROSOFT_ENTRA_SECRET,
-            tenantId: process.env.MICROSOFT_ENTRA_TENANT,
+            clientId: process.env.AUTH_MICROSOFT_ENTRA_ID_ID,
+            clientSecret: process.env.AUTH_MICROSOFT_ENTRA_ID_SECRET,
+            tenantId: process.env.AUTH_MICROSOFT_ENTRA_ID_TENANT_ID,
         }),
-        GithubProvider({
-            clientId: process.env.GITHUB_ID,
-            clientSecret: process.env.GITHUB_SECRET,
+        GithubProvider,
+        LinkedinProvider({
+            clientId: process.env.AUTH_LINKEDIN_ID,
+            clientSecret: process.env.AUTH_LINKEDIN_SECRET,
         }),
+        TwitterProvider,
     ]
 })

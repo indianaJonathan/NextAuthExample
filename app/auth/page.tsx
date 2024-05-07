@@ -15,6 +15,10 @@ export default function Login () {
         {
             name: "github",
             label: "gitHub",
+        },
+        {
+            name: "twitter",
+            label: "twitter",
         }
     ];
 
