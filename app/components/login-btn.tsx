@@ -1,7 +1,7 @@
 "use client"
 
 import { signIn } from "next-auth/react";
-import { IoLogoGoogle } from "react-icons/io";
+import { IoLogoGithub, IoLogoGoogle } from "react-icons/io";
 import { IoLogInOutline, IoLogoMicrosoft } from "react-icons/io5";
 import { Provider } from "../lib/types";
 
@@ -32,6 +32,8 @@ function getIcon (provider: string) {
             return <IoLogoGoogle size={20} className="text-black" />
         case "microsoft":
             return <IoLogoMicrosoft size={20} className="text-black" />
+        case "gitHub":
+            return <IoLogoGithub size={20} className="text-black" />
         default:
             return <IoLogInOutline size={20} className="text-black" />
     }

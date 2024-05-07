@@ -11,6 +11,10 @@ export default function Login () {
         {
             name: "microsoft-entra-id",
             label: "microsoft",
+        },
+        {
+            name: "github",
+            label: "gitHub",
         }
     ];
 

@@ -11,12 +11,12 @@ Você pode encontrar a versão publicada desse projeto [clicando aqui](https://n
 - next
 
 ## Providers implementados
+- GitHub;
 - Google;
 - Microsoft (Entra ID)
 
 ## Providers ainda não implementados
 - Apple;
-- GitHub;
 - Instagram;
 - LinkedIn;
 - Twitter (X)
