@@ -1,7 +1,6 @@
 import { auth } from "@/auth";
 import Link from "next/link";
 import { LogoutButton } from "./logout-btn";
-import { LoginButton } from "./login-btn";
 
 export async function Navbar() {
     const session = await auth();
@@ -23,7 +22,15 @@ export async function Navbar() {
                 </div>
             }
             {!session &&
-                <LoginButton />
+                <Link
+                    href={`/auth`}
+                >
+                    <div className="px-2 py-1 rounded-sm bg-white/30 hover:bg-white/20">
+                        <span>
+                            Entrar
+                        </span>
+                    </div>
+                </Link>
             }
         </div>
     );

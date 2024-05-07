@@ -5,3 +5,15 @@ Essa aplicação foi criada como um exemplo de utilização do framework **next-
 
 ## Dependências
 - next-auth *5.0.0-beta.16*
+
+## Providers implementados
+- Google;
+- Microsoft (Entra ID)
+
+## Providers ainda não implementados
+- Apple;
+- GitHub;
+- Instagram;
+- LinkedIn;
+- Twitter (X)
+
