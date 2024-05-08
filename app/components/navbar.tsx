@@ -13,7 +13,7 @@ export async function Navbar() {
     return (
         <div className="w-full px-4 py-2 flex flex-row gap-4 items-center bg-zinc-800">
             <div className="flex-1 flex flex-row items-center gap-4">
-                <MobileNavbar session={session}/>
+                <MobileNavbar session={session} />
                 <Link href={`/`} className="flex flex-row gap-2 items-center">
                     <div className="w-7 h-auto">
                         <Image 
