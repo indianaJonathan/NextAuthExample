@@ -2,27 +2,28 @@ import Image from "next/image"
 import { BoxedSection } from "./components/boxed-section"
 import { ReferenceItem } from "./components/reference-item"
 import Link from "next/link"
+import { ScrollableHorizontal } from "./components/scrollable-horizontal"
 
 export default async function Home() {
   return (
-    <main className="flex-1 flex flex-col gap-8 p-8">
-      <div>
-        <span className="text-4xl font-bold">
+    <main className="flex-1 flex flex-col gap-4 md:gap-8 p-4 md:p-8">
+      <div className="rounded-md p-4 bg-zinc-900 flex flex-col gap-2">
+        <span className="text-2xl md:text-4xl font-bold">
           Next Auth Example
         </span>
-        <p className="text-lg text-zinc-400">
+        <p className="text-base md:text-lg text-zinc-400">
           Essa aplicação foi criada como um exemplo de utilização do framework next-auth em sua versão beta no Next 14.1.4
         </p>
         <div className="flex flex-row gap-5">
           <div className="w-2 min-h-full bg-zinc-500" />
 
-          <p className="text-sm text-zinc-500 italic">
+          <p className="text-xs md:text-sm text-zinc-500 italic">
             Podem existir soluções melhores. Mas com a falta de documentação e exemplos práticos, essa foi a solução mais simples que encontrei enquanto testava as novas funções da versão Beta
           </p>
         </div>
       </div>
       <BoxedSection title="Dependências">
-        <div className="flex flex-row gap-4 flex-nowrap">
+        <ScrollableHorizontal>
           <ReferenceItem href="https://www.npmjs.com/package/next-auth/v/5.0.0-beta.17">
             <div className="w-8 h-auto">
               <Image 
@@ -74,10 +75,10 @@ export default async function Home() {
               14.1.4
             </span>
           </ReferenceItem>
-        </div>
+        </ScrollableHorizontal>
       </BoxedSection>
       <BoxedSection title="Autenticações implementadas">
-        <div className="grid grid-cols-12 gap-4">
+        <ScrollableHorizontal>
           <ReferenceItem href="https://github.com">
             <div className="w-12 h-auto">
               <Image 
@@ -134,10 +135,10 @@ export default async function Home() {
               Twitter (X)
             </span>
           </ReferenceItem>
-        </div>
+        </ScrollableHorizontal>
       </BoxedSection>
       <BoxedSection title="Autenticações que serão implementadas">
-        <div className="grid grid-cols-12 gap-4">
+        <ScrollableHorizontal>
           <ReferenceItem href="https://apple.com">
             <div className="w-12 h-auto">
               <Image 
@@ -180,12 +181,12 @@ export default async function Home() {
               LinkedIn
             </span>
           </ReferenceItem>
-        </div>
+        </ScrollableHorizontal>
       </BoxedSection>
-      <div className="flex flex-row items-center justify-center gap-8 px-8 py-12">
+      <div className="flex flex-col md:flex-row items-center justify-center gap-2 md:gap-8 md:px-8 md:py-12">
         <Link href="https://github.com/indianaJonathan?tab=repositories">
           <div className="rounded-l-full rounded-r-full bg-zinc-500 overflow-hidden p-2 flex flex-row gap-3 items-center">
-            <div className="w-16 h-auto overflow-hidden rounded-full">
+            <div className="w-20 md:w-16 h-auto overflow-hidden rounded-full">
               <Image 
                 src={`https://avatars.githubusercontent.com/u/22666576?v=4`}
                 alt="Jonathan Hermam GitHub Page"
@@ -195,10 +196,10 @@ export default async function Home() {
               />
             </div>
             <div className="flex flex-col gap-1 mr-4">
-              <span className="text-black text-xl font-semibold">
+              <span className="text-black text-base md:text-xl font-semibold">
                 Jonathan Hermam
               </span>
-              <span className="text-white text-sm font-base">
+              <span className="text-white text-xs md:text-sm font-base">
                 Página do GitHub do autor
               </span>
             </div>
@@ -206,7 +207,7 @@ export default async function Home() {
         </Link>
         <Link href="https://github.com/indianaJonathan/NextAuthExample">
           <div className="rounded-l-full rounded-r-full bg-zinc-500 overflow-hidden p-2 flex flex-row gap-3 items-center">
-            <div className="w-16 h-auto overflow-hidden rounded-full">
+            <div className="w-20 md:w-16 h-auto overflow-hidden rounded-full">
               <Image 
                 src={`https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg`}
                 alt="GitHub logo"
@@ -216,10 +217,10 @@ export default async function Home() {
               />
             </div>
             <div className="flex flex-col gap-1 mr-4">
-              <span className="text-black text-xl font-semibold">
+              <span className="text-black text-base md:text-xl font-semibold">
                 NextAuth Example
               </span>
-              <span className="text-white text-sm font-base">
+              <span className="text-white text-xs md:text-sm font-base">
                 Repositório do projeto
               </span>
             </div>
